@@ -1,0 +1,15 @@
+git clone URL
+
+
+git add -A
+git commit -m "nombre"
+
+git push
+git push origin master
+
+
+git pull
+
+
+git status
+git log

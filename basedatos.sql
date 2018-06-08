@@ -44,7 +44,7 @@ CREATE TABLE control_usuario (
 
 
 CREATE TABLE detalle_categoria (
-    id_detalle_categoria   INT NOT NULL AUTO_INCREMENT,,
+    id_detalle_categoria   INT NOT NULL AUTO_INCREMENT,
     id_categoria           INT NOT NULL,
     id_oferta              INT NOT NULL,
     PRIMARY KEY(id_detalle_categoria)

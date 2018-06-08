@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C9B59A6E-9D43-8AEF-E629-AEFAA1CA3BA9" containerWithKeyObject="24446F47-23B7-F843-7FF1-F42AE6F35196" localFKIndex="32ADD7EA-83CE-3574-145A-F7DFC194DACE" name="oflabo_empre_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:25:42 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<referredTableLongName>empresa</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>770E1475-2D36-A636-D869-9DF9F72A65C4</referredTableID>
+<keyObject>D339DE66-0BFF-CD26-8BE3-D7B6C42284FD</keyObject>
+<referredKeyID>D339DE66-0BFF-CD26-8BE3-D7B6C42284FD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_empresa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24446F47-23B7-F843-7FF1-F42AE6F35196" name="oferta_laboral">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:47:22 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_oferta" id="7A2478FD-A63F-4E47-1686-B651ED7E2BAC">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:20:05 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_oferta" id="09E1C540-414F-85DC-85DE-E989087D27DF">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:20:54 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vacantes" id="121B724E-782B-BCAE-3776-5A0FB3258E5B">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:20:54 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_empresa" id="AEEF8D1B-AA53-B25F-69F5-203A5BEC499D">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:25:42 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9B59A6E-9D43-8AEF-E629-AEFAA1CA3BA9" referredColumn="25F11EAD-80F7-CE10-AC05-EBD5D0C9B013"/>
+</associations>
+</Column>
+<Column name="glosa" id="3C458212-BB73-EC5C-8C47-BF5292007A29">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:10:28 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_comuna" id="4E77C7DF-67DF-37A4-4FC6-8D85E3495632">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:52:19 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61448E77-2E51-B839-D1B4-16E433697484" referredColumn="2198455E-8DEA-351E-C37D-CCCF9FD295CA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C7D689D-9ED8-000A-F0F6-D487F7C1A909" name="oferta_laboral_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:20:05 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A2478FD-A63F-4E47-1686-B651ED7E2BAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32ADD7EA-83CE-3574-145A-F7DFC194DACE" name="oflabo_empre_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:25:42 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEEF8D1B-AA53-B25F-69F5-203A5BEC499D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53FCA934-531C-B301-6FF8-F68763DED17D" name="ofla_comu_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:52:19 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E77C7DF-67DF-37A4-4FC6-8D85E3495632"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

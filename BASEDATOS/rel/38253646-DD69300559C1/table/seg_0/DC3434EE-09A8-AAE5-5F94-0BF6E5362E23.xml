@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC3434EE-09A8-AAE5-5F94-0BF6E5362E23" name="provincia">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:50:42 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_provincia" id="F3DC8A0D-AD98-5CCF-D6F9-F7695F9C9F0B">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:51:28 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_provincia" id="4C9C3AFD-F480-4726-A51D-F3FD0B32FE8E">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:51:28 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE36F643-88FF-9BFC-43D5-14F03B92365D" name="provincia_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:51:28 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3DC8A0D-AD98-5CCF-D6F9-F7695F9C9F0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

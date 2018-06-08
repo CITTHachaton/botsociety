@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D5E0224-7267-BDF6-336A-6DDB7337E52E" name="respuestas">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:27:10 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_respuesta" id="4E26BC40-D6C5-1442-C59E-4B9B84DB9DFF">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:27:44 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="respuesta" id="3C1CB870-8B85-EBF2-C9E7-708A7B7BDFE1">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:27:44 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_postulacion" id="D0FBEE44-D45C-6CEC-6CBE-81CF21A3B31A">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:27:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0A1C6E9-29FB-8196-AD85-747CFF5510BC" referredColumn="B90F7BD3-8B63-EB46-6ABC-1B101279B100"/>
+</associations>
+</Column>
+<Column name="id_pregunta" id="1F218C2E-5511-7DEA-6FFC-C328F195D46B">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:29:16 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EFAE3970-3544-3BE4-944A-AEE4345824B4" referredColumn="9DC6192F-041D-AFE1-FCD3-6FB4A14A9972"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E16966F-0500-03DF-2973-F5183BF9E192" name="respuestas_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:27:44 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E26BC40-D6C5-1442-C59E-4B9B84DB9DFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92E14EB7-1349-BD4F-4976-AC6D3B7649A7" name="respuestas_postulacion_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:27:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0FBEE44-D45C-6CEC-6CBE-81CF21A3B31A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C6A2805-E760-A240-3319-4C2C52AC32E2" name="resp_preg_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:29:16 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F218C2E-5511-7DEA-6FFC-C328F195D46B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

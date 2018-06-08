@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3AB98430-3ED1-2FB6-E8D7-536D5C9702A8" name="nacionalidad">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:50:14 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_nacionalidad" id="22AD6EDE-6F89-EC22-FABE-8E7822E7F994">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:50:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_nacionalidad" id="B98F3A24-1746-C95F-9987-A4C150B547B1">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:50:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B7D9DD8-7B95-0A79-FDEF-08369B9763CD" name="nacionalidad_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:50:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22AD6EDE-6F89-EC22-FABE-8E7822E7F994"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

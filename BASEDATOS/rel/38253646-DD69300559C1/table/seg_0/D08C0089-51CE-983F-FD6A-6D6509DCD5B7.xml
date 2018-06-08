@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D08C0089-51CE-983F-FD6A-6D6509DCD5B7" name="detalle_categoria">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:23:51 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_detalle_categoria" id="2032201B-486F-2554-7F1F-64791EAF2487">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:24:39 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_categoria" id="64B5F771-78AF-83F1-7DCE-B8C5F1DE309D">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:24:44 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A842A9C-B4C4-69A4-E1A6-A5B51695812F" referredColumn="CA2163A7-CA69-F480-2BC7-DD999872C481"/>
+</associations>
+</Column>
+<Column name="id_oferta" id="FBF60BD6-C9AB-E5EF-D0B5-1641D5C83179">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:25:07 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF07C256-C2F1-A878-3233-E022E1AD0C3D" referredColumn="7A2478FD-A63F-4E47-1686-B651ED7E2BAC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84C00609-901F-B7D8-66B3-41C059112F20" name="detalle_categoria_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:24:39 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2032201B-486F-2554-7F1F-64791EAF2487"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A525C209-FF59-C554-96B8-CDBD3384E794" name="deca_caof_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:24:44 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64B5F771-78AF-83F1-7DCE-B8C5F1DE309D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="784B5BF0-A1CB-A244-9C7D-06475A41842E" name="deca_oflal_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:25:07 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBF60BD6-C9AB-E5EF-D0B5-1641D5C83179"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

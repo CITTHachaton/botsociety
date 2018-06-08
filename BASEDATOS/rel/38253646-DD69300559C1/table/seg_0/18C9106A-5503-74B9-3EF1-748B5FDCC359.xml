@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18C9106A-5503-74B9-3EF1-748B5FDCC359" name="pregunta">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:28:17 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pregunta" id="9DC6192F-041D-AFE1-FCD3-6FB4A14A9972">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:28:51 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_pregunta" id="68AD087B-0AFE-E789-2C01-4C4BA4036E76">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:28:51 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_oferta" id="83C33268-A4BE-D2D6-146D-BDB130DEF3CA">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:29:37 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8AD915B9-AFFD-8620-9DEE-E42B90C39D5F" referredColumn="7A2478FD-A63F-4E47-1686-B651ED7E2BAC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09F012B5-9C29-05A3-0C27-78D022CDC239" name="pregunta_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:28:51 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DC6192F-041D-AFE1-FCD3-6FB4A14A9972"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CAA8517-F583-185C-4104-1D63FA5577C2" name="preg_laboral_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:29:37 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83C33268-A4BE-D2D6-146D-BDB130DEF3CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

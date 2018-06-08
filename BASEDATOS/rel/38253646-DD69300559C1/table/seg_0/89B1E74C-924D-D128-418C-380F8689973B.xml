@@ -1,0 +1,317 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89B1E74C-924D-D128-418C-380F8689973B" name="persona">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:47:05 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_persona" id="E437EB92-D004-4946-9536-FD61E3C45A1D">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:50:12 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_persona" id="6A04DE8E-5024-950F-FE33-BCCB8C54B1A6">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:50:12 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_d" id="DCCEBB2A-D5F6-605A-A34B-7E94B1EEDF57">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:12:41 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="973CBEEC-F940-56B7-5748-691C06867CB2" referredColumn="F5836567-8E2B-1D11-8B79-F2D7DBAD9FB0"/>
+</associations>
+</Column>
+<Column name="nombres" id="322C7232-1680-5F8E-04EB-C60EAFC37DCC">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:50:12 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellidos" id="56CA4639-3249-CB9D-9796-CCF0976A2E59">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:50:12 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="0859E97C-A0DD-712C-3871-BC717528098C">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:15:38 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_nacionalidad" id="67F2DF13-15B6-B7DA-D7D6-92707705A577">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:51:48 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CDBE18A-B9FE-B303-39E3-2F753F061B1E" referredColumn="22AD6EDE-6F89-EC22-FABE-8E7822E7F994"/>
+</associations>
+</Column>
+<Column name="id_comuna" id="D6329C70-1FCB-0C21-19A1-0A3107790E2A">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:27:23 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="291F981E-2C6A-E95A-4EC4-9E2BCCFDF309" referredColumn="2198455E-8DEA-351E-C37D-CCCF9FD295CA"/>
+</associations>
+</Column>
+<Column name="direccion" id="FDE94847-13ED-1835-4188-4F054A0CD6A9">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 22:02:26 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_estadoc" id="635B8804-DF65-3E3B-269D-5B559A4ED45B">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:52:30 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A9608B3-5AE3-400B-EBAE-6742C14E9D19" referredColumn="5A4DDA3C-B07A-F435-BFB6-6CD8213AC920"/>
+</associations>
+</Column>
+<Column name="id_sexo" id="6481A4CB-0BB0-DE14-0B0E-6635F56121FE">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:08:17 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21F2960B-853F-00D3-6D09-5E94EC17811C" referredColumn="0E19AFF3-8804-A1DD-ABE0-44B35D6C7409"/>
+</associations>
+</Column>
+<Column name="id_genero" id="045DA71A-FBCA-C4CD-4F70-CE49F022A183">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:54:06 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B77203B-087F-8AF7-2185-86E78A356FBE" referredColumn="6A0FF8FB-3B9F-0280-DEBA-3B6912C0305D"/>
+</associations>
+</Column>
+<Column name="id_nivel_e" id="A339881D-E8B4-0961-8847-D07C6C0F5E22">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:06:34 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FE11A07-1ECD-B33F-6B94-433FF73B4B44" referredColumn="7FFF3EB2-D4D8-F7E5-45BA-02220219B49A"/>
+</associations>
+</Column>
+<Column name="profesion" id="63B9BA5E-3F80-40B0-DBD6-B31F9B19AADC">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:37:08 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="74BB035E-0FD5-6D6E-070F-A7C3D4A99578">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:08:42 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="AE8FAA3B-FF3A-D029-EEAF-F7234D32AEA7">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:09:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="celular" id="389CF0FD-963F-713C-1670-16CFDE500870">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:09:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="presentacion" id="25BD614A-487A-81BC-552C-1B264BF56001">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 22:14:04 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4359734D-8B2F-1B91-14EB-A581A6E87E10" name="persona_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:50:12 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E437EB92-D004-4946-9536-FD61E3C45A1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3EC000B-7DBD-D461-B799-A099722BBC63" name="pers_naci_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 18:51:48 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67F2DF13-15B6-B7DA-D7D6-92707705A577"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6387D381-3D49-ABB1-1384-6472651347C7" name="persona_comuna_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:27:23 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6329C70-1FCB-0C21-19A1-0A3107790E2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8060E146-AA49-4712-F59E-073A882D1FE5" name="persona_estado_civil_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:52:30 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="635B8804-DF65-3E3B-269D-5B559A4ED45B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0F8CFDC-4A91-6FB8-9CE8-603D444AD655" name="persona_genero_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:54:06 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="045DA71A-FBCA-C4CD-4F70-CE49F022A183"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CB45F29-4BFD-52CD-AEC9-DE2662073176" name="perso_nivel_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:06:34 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A339881D-E8B4-0961-8847-D07C6C0F5E22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFB1E704-5D06-7BD9-6A61-C43DC594F63A" name="persona_sexo_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:08:17 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6481A4CB-0BB0-DE14-0B0E-6635F56121FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48035746-DEDD-9678-C1A3-F4D5C8E9A186" name="persona_tipo_documento_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:12:41 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCCEBB2A-D5F6-605A-A34B-7E94B1EEDF57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB23ECDE-B215-27B3-9E7A-97A9B9930946" name="experiencia_laboral">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:55:19 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_experiencia_laboral" id="C2D11C39-4ACA-B959-40E9-52462675A52F">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:00:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_persona" id="B0232171-AA90-36AF-3090-B75A319780C9">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:01:05 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B56F8B2E-4CDB-BE22-FEB1-E9EEBE33AA4E" referredColumn="E437EB92-D004-4946-9536-FD61E3C45A1D"/>
+</associations>
+</Column>
+<Column name="periodo" id="F0C614BC-0EDC-D26A-1503-2CC3F576F45B">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:00:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="empresa" id="E31D6761-642C-9594-42CA-6D81FF2976D3">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:00:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cargo" id="15CFB999-92D9-CE87-BEF5-0C4856F2846B">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:00:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="glosa" id="A6643F08-81F2-499A-4627-786A8A3CB310">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:00:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14AFD6FE-8093-C727-D2EB-098B62D0D76A" name="experiencia_laboral_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:00:49 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2D11C39-4ACA-B959-40E9-52462675A52F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C9FC196-50AE-3175-6E44-6D9F426B889E" name="expe_labo_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:01:05 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0232171-AA90-36AF-3090-B75A319780C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

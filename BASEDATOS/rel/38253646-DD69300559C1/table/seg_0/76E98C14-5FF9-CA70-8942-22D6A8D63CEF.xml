@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76E98C14-5FF9-CA70-8942-22D6A8D63CEF" name="tipo_documento">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:11:53 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_d" id="F5836567-8E2B-1D11-8B79-F2D7DBAD9FB0">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:12:37 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_tipo_d" id="29CFBA09-009A-1156-FE64-367504378417">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:12:37 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0DED84D4-ED4C-4511-12BA-0652B8713DB2" name="tipo_documento_PK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 21:12:37 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5836567-8E2B-1D11-8B79-F2D7DBAD9FB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

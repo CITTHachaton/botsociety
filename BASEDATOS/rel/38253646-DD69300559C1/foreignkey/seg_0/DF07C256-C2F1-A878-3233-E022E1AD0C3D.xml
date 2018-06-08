@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DF07C256-C2F1-A878-3233-E022E1AD0C3D" containerWithKeyObject="D08C0089-51CE-983F-FD6A-6D6509DCD5B7" localFKIndex="784B5BF0-A1CB-A244-9C7D-06475A41842E" name="deca_oflal_FK">
+<createdBy>benja</createdBy>
+<createdTime>2018-06-08 20:25:07 UTC</createdTime>
+<ownerDesignName>BASEDATOS</ownerDesignName>
+<referredTableLongName>oferta_laboral</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>24446F47-23B7-F843-7FF1-F42AE6F35196</referredTableID>
+<keyObject>1C7D689D-9ED8-000A-F0F6-D487F7C1A909</keyObject>
+<referredKeyID>1C7D689D-9ED8-000A-F0F6-D487F7C1A909</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_oferta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

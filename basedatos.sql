@@ -84,11 +84,11 @@ CREATE TABLE genero (
 
 ALTER TABLE genero ADD CONSTRAINT genero_pk PRIMARY KEY ( id_genero );
 
-CREATE TABLE `like` (
-    id_like      INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE `likes` (
+    id_likes      INT NOT NULL AUTO_INCREMENT,
     id_persona   INT NOT NULL,
     id_oferta    INT NOT NULL,
-    PRIMARY KEY(id_like)
+    PRIMARY KEY(id_likes)
 );
 
 CREATE TABLE like_general (
@@ -222,12 +222,12 @@ ALTER TABLE like_general
     ADD CONSTRAINT like_gepe_fk FOREIGN KEY ( id_persona )
         REFERENCES persona ( id_persona );
 
-ALTER TABLE `like`
-    ADD CONSTRAINT like_oferta_laboral_fk FOREIGN KEY ( id_oferta )
+ALTER TABLE `likes`
+    ADD CONSTRAINT likes_oferta_laboral_fk FOREIGN KEY ( id_oferta )
         REFERENCES oferta_laboral ( id_oferta );
 
-ALTER TABLE `like`
-    ADD CONSTRAINT like_persona_fk FOREIGN KEY ( id_persona )
+ALTER TABLE `likes`
+    ADD CONSTRAINT likes_persona_fk FOREIGN KEY ( id_persona )
         REFERENCES persona ( id_persona );
 
 ALTER TABLE oferta_laboral

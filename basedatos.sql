@@ -286,3 +286,65 @@ ALTER TABLE respuestas
     ADD CONSTRAINT respuestas_postulacion_fk FOREIGN KEY ( id_postulacion )
         REFERENCES postulacion ( id_postulacion );
 
+
+
+
+INSERT INTO provincia VALUES (1,'Santiago');
+INSERT INTO provincia VALUES (2,'Chacabuco');
+INSERT INTO provincia VALUES (3,'Cordillera');
+INSERT INTO provincia VALUES (4,'Maipo');
+INSERT INTO provincia VALUES (5,'Melipilla');
+INSERT INTO provincia VALUES (6,'Talagante');
+
+INSERT INTO comuna VALUES (1,'Santiago',1);
+INSERT INTO comuna VALUES (2,'Independecia',1);
+INSERT INTO comuna VALUES (3,'Conchalí',1);
+INSERT INTO comuna VALUES (4,'Huachuraba',1);
+INSERT INTO comuna VALUES (5,'Recoleta',1);
+INSERT INTO comuna VALUES (6,'Providencia',1);
+INSERT INTO comuna VALUES (7,'Vitacura',1);
+INSERT INTO comuna VALUES (8,'Lo Barnechea',1);
+INSERT INTO comuna VALUES (9,'Las Condes',1);
+INSERT INTO comuna VALUES (10,'Ñuñoa',1);
+INSERT INTO comuna VALUES (11,'La Reina',1);
+INSERT INTO comuna VALUES (12,'Macul',1);
+INSERT INTO comuna VALUES (13,'Peñalolén',1);
+INSERT INTO comuna VALUES (14,'La Florida',1);
+INSERT INTO comuna VALUES (15,'San Joaquín',1);
+INSERT INTO comuna VALUES (16,'La Granja',1);
+INSERT INTO comuna VALUES (17,'La Pintana',1);
+INSERT INTO comuna VALUES (18,'San Ramón',1);
+INSERT INTO comuna VALUES (19,'San Miguel',1);
+INSERT INTO comuna VALUES (20,'La Cisterna',1);
+INSERT INTO comuna VALUES (21,'El Bosque',1);
+INSERT INTO comuna VALUES (22,'Pedro Aguirre Cerda',1);
+INSERT INTO comuna VALUES (23,'Lo Espejo',1);
+INSERT INTO comuna VALUES (24,'Estacion Central',1);
+INSERT INTO comuna VALUES (25,'Cerrillos',1);
+INSERT INTO comuna VALUES (26,'Maipú',1);
+INSERT INTO comuna VALUES (27,'Quinta Normal',1);
+INSERT INTO comuna VALUES (28,'Lo Prado',1);
+INSERT INTO comuna VALUES (29,'Pudahuel',1);
+INSERT INTO comuna VALUES (30,'Cerro Navía',1);
+INSERT INTO comuna VALUES (31,'Renca',1);
+INSERT INTO comuna VALUES (32,'Quilicura',1);
+INSERT INTO comuna VALUES (33,'Colina',2);
+INSERT INTO comuna VALUES (34,'Lampa',2);
+INSERT INTO comuna VALUES (35,'Tiltil',2);
+INSERT INTO comuna VALUES (36,'Puente Alto',3);
+INSERT INTO comuna VALUES (37,'San Jose de Maipo',3);
+INSERT INTO comuna VALUES (38,'Pirque',3);
+INSERT INTO comuna VALUES (39,'San Bernardo',4);
+INSERT INTO comuna VALUES (40,'Buin',4);
+INSERT INTO comuna VALUES (41,'Paine',4);
+INSERT INTO comuna VALUES (42,'Calera de Tango',4);
+INSERT INTO comuna VALUES (43,'Melipilla',5);
+INSERT INTO comuna VALUES (44,'María Pinto',5);
+INSERT INTO comuna VALUES (45,'Curacaví',5);
+INSERT INTO comuna VALUES (46,'Alhué',5);
+INSERT INTO comuna VALUES (47,'San Pedro',5);
+INSERT INTO comuna VALUES (48,'Talagante',6);
+INSERT INTO comuna VALUES (49,'Peñaflor',6);
+INSERT INTO comuna VALUES (50,'Isla de Maipo',6);
+INSERT INTO comuna VALUES (51,'El Monte',4);
+INSERT INTO comuna VALUES (52,'Padre Hurtado',4);

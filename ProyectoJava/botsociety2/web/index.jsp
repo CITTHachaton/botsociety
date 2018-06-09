@@ -9,7 +9,7 @@
                 width: 100%;
             }
         </style>
-        <meta charset="utf-8">a
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -38,7 +38,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="ingresar.jsp">Ingresar</a>
+                            <a class="nav-link" href="login.jsp">Ingresar</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.jsp">Registrarse</a>

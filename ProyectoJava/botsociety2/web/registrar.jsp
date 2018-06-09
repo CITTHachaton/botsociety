@@ -4,6 +4,7 @@
     Author     : benja
 --%>
 
+<%@page import="controladores.ControladorCorreo"%>
 <%@page import="dao.CategoriaOfertaDAO"%>
 <%@page import="modelo.CategoriaOferta"%>
 <%@page import="dao.NivelEstudioDAO"%>
@@ -51,7 +52,7 @@
             // ControlUsuario user = sesion.getAttribute("usuario") == null ? null : (ControlUsuario) sesion.getAttribute("usuario");
             String rut = "190553388";
             if (rut.length()>0) {
-                
+                (new ControladorCorreo()).enviar("by.sepulvedas@alumnos.duoc.cl", "Gracias por registrarte en nuestra actividad laboral", "Bienvenidos");
                 comunas = (new ComunaDAO()).Listar();
                 tiposDoc = (new TipoDocumentoDAO()).Listar();
                 nacionalidades = (new NacionalidadDAO()).Listar();

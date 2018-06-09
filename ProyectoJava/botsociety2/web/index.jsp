@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+    
     <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <style>
             #map {
                 height: 400px;
@@ -51,7 +54,7 @@
             <div class="masthead-content">
                 <div class="container">
                     <h1 class="masthead-heading mb-0">Feria Laboral</h1>
-                    <h2 class="masthead-subheading mb-0">La Mejor oportunidad para encontra trabajo est√° aqui!!!</h2>
+                    <h2 class="masthead-subheading mb-0">La Mejor oportunidad para encontra trabajo est· aqui!!!</h2>
                     <a href="login.jsp" class="btn btn-primary btn-xl rounded-pill mt-5">Registrarse</a>
                     <a><br></a>
                     <a href="login.jsp" class="btn btn-primary btn-xl rounded-pill mt-5">ingresar</a>
@@ -116,7 +119,7 @@
 
         <footer class="py-5 bg-black">
             <div class="container">
-                <p class="m-0 text-center text-white small">Feria de Empleabilidad Regional Website 2018</p>
+                <p class="m-0 text-center text-white bg-black small">Feria de Empleabilidad Regional Website 2018</p>
             </div>
         </footer>
 

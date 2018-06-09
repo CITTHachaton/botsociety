@@ -1,3 +1,20 @@
+INSERT INTO rubro VALUES (1, 'Pesca');
+INSERT INTO rubro VALUES (2, 'Construcción');
+INSERT INTO rubro VALUES (3, 'Hoteles y Restaurantes');
+INSERT INTO rubro VALUES (4, 'Enseñanza');
+INSERT INTO rubro VALUES (5, 'Salud');
+
+INSERT INTO area VALUES (1, 'Descanso y Food Trucks');
+INSERT INTO area VALUES (2, 'Asesoramiento en temas de empleabilidad');
+INSERT INTO area VALUES (3, 'Stand empresas');
+INSERT INTO area VALUES (4, 'Stand de informaciones');
+
+INSERT INTO stand VALUES (1, 300, 3);
+INSERT INTO stand VALUES (2, 301, 3);
+INSERT INTO stand VALUES (3, 302, 3);
+INSERT INTO stand VALUES (4, 101, 1);
+INSERT INTO stand VALUES (5, 401, 4);
+
 INSERT INTO estado_civil VALUES(1, 'Soltero/a');
 INSERT INTO estado_civil VALUES(2, 'Casado/a');
 INSERT INTO estado_civil VALUES(3, 'Viudo/a');
@@ -100,13 +117,13 @@ INSERT INTO tipo_documento VALUES(1, 'Rut');
 INSERT INTO tipo_documento VALUES(2, 'Pasaporte');
 INSERT INTO tipo_documento VALUES(3, 'Visa');
 
-INSERT INTO empresa (id_empresa,nombre_empresa, rut_empresa, imagen_empresa) VALUES (1,'ADMINISTRADORA DE BENEFICIOS PHARMA BENEFITS CHILE LTDA.','96838800-2','aaaa');
-INSERT INTO empresa (id_empresa,nombre_empresa, rut_empresa, imagen_empresa) VALUES (2,'CAJA DE COMPENSACION DE ASIGNACION FAMILIAR LOS HEROES','70016330-K','aaa');
-INSERT INTO empresa (id_empresa,nombre_empresa, rut_empresa, imagen_empresa) VALUES (3,'COMERCIALIZADORA S.A.','81675600-6','aaa');
+INSERT INTO control_empresa (usuario, clave, rut_empresa) VALUES ('96838800-2','96838800-2','96838800-2');
+INSERT INTO control_empresa (usuario, clave, rut_empresa) VALUES ('70016330-K','70016330-K','70016330-K');
+INSERT INTO control_empresa (usuario, clave, rut_empresa) VALUES ('81675600-6','81675600-6','81675600-6');
 
-INSERT INTO control_empresa (usuario, clave, rut_empresa, id_empresa) VALUES ('96838800-2','96838800-2','96838800-2',1);
-INSERT INTO control_empresa (usuario, clave, rut_empresa, id_empresa) VALUES ('70016330-K','70016330-K','70016330-K',2);
-INSERT INTO control_empresa (usuario, clave, rut_empresa, id_empresa) VALUES ('81675600-6','81675600-6','81675600-6',3);
+INSERT INTO empresa (id_empresa, nombre_empresa, rut_empresa, imagen_empresa, id_rubro, id_stand, id_control_e) VALUES (1,'ADMINISTRADORA DE BENEFICIOS PHARMA BENEFITS CHILE LTDA.','96838800-2','aaaa',1,1,1);
+INSERT INTO empresa (id_empresa, nombre_empresa, rut_empresa, imagen_empresa, id_rubro, id_stand, id_control_e) VALUES (2,'CAJA DE COMPENSACION DE ASIGNACION FAMILIAR LOS HEROES','70016330-K','aaa',2,2,1);
+INSERT INTO empresa (id_empresa, nombre_empresa, rut_empresa, imagen_empresa, id_rubro, id_stand, id_control_e) VALUES (3,'COMERCIALIZADORA S.A.','81675600-6','aaa',3,3,1);
 
 INSERT INTO categoria_oferta VALUES (1, 'part time');
 INSERT INTO categoria_oferta VALUES (2, 'full time');

@@ -17,7 +17,7 @@ ALTER TABLE categoria_oferta ADD CONSTRAINT categoria_oferta_pk PRIMARY KEY ( id
 
 CREATE TABLE comuna (
     id_comuna       INT NOT NULL,
-    nombre_comina   VARCHAR(60) NOT NULL,
+    nombre_comuna   VARCHAR(60) NOT NULL,
     id_provincia    INT NOT NULL
 );
 

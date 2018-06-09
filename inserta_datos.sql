@@ -100,9 +100,9 @@ INSERT INTO tipo_documento VALUES(1, 'Rut');
 INSERT INTO tipo_documento VALUES(2, 'Pasaporte');
 INSERT INTO tipo_documento VALUES(3, 'Visa');
 
-INSERT INTO empresa (nombre_empresa, rut_empresa, imagen_empresa) VALUES ('ADMINISTRADORA DE BENEFICIOS PHARMA BENEFITS CHILE LTDA.','96838800-2','aaaa');
-INSERT INTO empresa (nombre_empresa, rut_empresa, imagen_empresa) VALUES ('CAJA DE COMPENSACION DE ASIGNACION FAMILIAR LOS HEROES','70016330-K','aaa');
-INSERT INTO empresa (nombre_empresa, rut_empresa, imagen_empresa) VALUES ('COMERCIALIZADORA S.A.','81675600-6','aaa');
+INSERT INTO empresa (id_empresa,nombre_empresa, rut_empresa, imagen_empresa) VALUES (1,'ADMINISTRADORA DE BENEFICIOS PHARMA BENEFITS CHILE LTDA.','96838800-2','aaaa');
+INSERT INTO empresa (id_empresa,nombre_empresa, rut_empresa, imagen_empresa) VALUES (2,'CAJA DE COMPENSACION DE ASIGNACION FAMILIAR LOS HEROES','70016330-K','aaa');
+INSERT INTO empresa (id_empresa,nombre_empresa, rut_empresa, imagen_empresa) VALUES (3,'COMERCIALIZADORA S.A.','81675600-6','aaa');
 
 INSERT INTO control_empresa (usuario, clave, rut_empresa, id_empresa) VALUES ('96838800-2','96838800-2','96838800-2',1);
 INSERT INTO control_empresa (usuario, clave, rut_empresa, id_empresa) VALUES ('70016330-K','70016330-K','70016330-K',2);
@@ -113,23 +113,24 @@ INSERT INTO categoria_oferta VALUES (2, 'full time');
 INSERT INTO categoria_oferta VALUES (3, 'discapacitados');
 INSERT INTO categoria_oferta VALUES (4, 'practica profesional');
 
-INSERT INTO oferta_laboral (nombre_oferta, vacantes, id_empresa, glosa, id_comuna)
-VALUES ('Profesionales de obra', 20, 1, '4 - 21 años de experiencia', 7);
-INSERT INTO oferta_laboral (nombre_oferta, vacantes, id_empresa, glosa, id_comuna)
-VALUES ('Pogramador', 5, 2, '1 - 0 años de experiencia', 1);
-INSERT INTO oferta_laboral (nombre_oferta, vacantes, id_empresa, glosa, id_comuna)
-VALUES ('Vendedor técnico', 10, 3, '2 - 5 años de experiencia', 24);
+INSERT INTO oferta_laboral (id_oferta,nombre_oferta, vacantes, id_empresa, glosa, id_comuna)
+VALUES (1,'Profesionales de obra', 20, 1, '4 - 21 años de experiencia', 7);
+INSERT INTO oferta_laboral (id_oferta,nombre_oferta, vacantes, id_empresa, glosa, id_comuna)
+VALUES (2,'Pogramador', 5, 2, '1 - 0 años de experiencia', 1);
+INSERT INTO oferta_laboral (id_oferta,nombre_oferta, vacantes, id_empresa, glosa, id_comuna)
+VALUES (3,'Vendedor técnico', 10, 3, '2 - 5 años de experiencia', 24);
 
 INSERT INTO detalle_categoria (id_categoria, id_oferta) VALUES (3,1);
 INSERT INTO detalle_categoria (id_categoria, id_oferta) VALUES (2,2);
 INSERT INTO detalle_categoria (id_categoria, id_oferta) VALUES (1,3);
 
-INSERT INTO pregunta (nombre_pregunta, id_oferta) VALUES ('lenguajes que domine', 2);
-INSERT INTO pregunta (nombre_pregunta, id_oferta) VALUES ('expectativas de renta', 1);
-INSERT INTO pregunta (nombre_pregunta, id_oferta) VALUES ('expectativas de renta', 3);
-INSERT INTO pregunta (nombre_pregunta, id_oferta) VALUES ('nivel de inglés', 3);
+INSERT INTO pregunta (id_pregunta,nombre_pregunta, id_oferta) VALUES (1,'lenguajes que domine', 2);
+INSERT INTO pregunta (id_pregunta,nombre_pregunta, id_oferta) VALUES (2,'expectativas de renta', 1);
+INSERT INTO pregunta (id_pregunta,nombre_pregunta, id_oferta) VALUES (3,'expectativas de renta', 3);
+INSERT INTO pregunta (id_pregunta,nombre_pregunta, id_oferta) VALUES (4,'nivel de inglés', 3);
 
-INSERT INTO persona (   rut_persona, 
+INSERT INTO persona (   id_persona,
+						rut_persona, 
                         id_tipo_d, 
                         nombres, 
                         apellidos, 
@@ -145,8 +146,9 @@ INSERT INTO persona (   rut_persona,
                         correo,
                         telefono,
                         celular,
-                        prestacion) 
-VALUES (    '19.782.810-2',
+                        presentacion) 
+VALUES (    1,
+			'19.782.810-2',
             1,
             'Byron Ricardo',
             'Sepúlveda Sepúlveda',
@@ -164,7 +166,8 @@ VALUES (    '19.782.810-2',
             '948874894',
             'byron');
             
-INSERT INTO persona (   rut_persona, 
+INSERT INTO persona (   id_persona,
+						rut_persona, 
                         id_tipo_d, 
                         nombres, 
                         apellidos, 
@@ -180,8 +183,9 @@ INSERT INTO persona (   rut_persona,
                         correo,
                         telefono,
                         celular,
-                        prestacion) 
-VALUES (    '20.181.487-1',
+                        presentacion) 
+VALUES (    2,
+			'20.181.487-1',
             1,
             'Mati',
             'Larrondo',
@@ -212,9 +216,9 @@ VALUES (1, '2017 - 2017', 'Soporte tecnico', 'soporte',null);
 INSERT INTO likes (id_persona, id_oferta) VALUES (1,1);
 INSERT INTO likes (id_persona, id_oferta) VALUES (2,2);
 
-INSERT INTO postulacion (fecha, id_persona, id_oferta) VALUES (Now(), 1, 1);
-INSERT INTO postulacion (fecha, id_persona, id_oferta) VALUES (Now(), 2, 2);
-INSERT INTO postulacion (fecha, id_persona, id_oferta) VALUES (Now(), 1, 3);
+INSERT INTO postulacion (id_postulacion,fecha, id_persona, id_oferta) VALUES (1,Now(), 1, 1);
+INSERT INTO postulacion (id_postulacion,fecha, id_persona, id_oferta) VALUES (2,Now(), 2, 2);
+INSERT INTO postulacion (id_postulacion,fecha, id_persona, id_oferta) VALUES (3,Now(), 1, 3);
 
 INSERT INTO respuestas (respuesta, id_postulacion, id_pregunta)
 VALUES ('300.000',1,2);

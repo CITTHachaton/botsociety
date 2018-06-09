@@ -27,7 +27,7 @@ CREATE TABLE control_empresa (
     id_control_e   INT NOT NULL AUTO_INCREMENT,
     usuario        VARCHAR(40) NOT NULL,
     clave          VARCHAR(30) NOT NULL,
-    rut_empresa    VARCHAR(1),
+    rut_empresa    VARCHAR(30),
     id_empresa     INT NOT NULL,
     PRIMARY KEY(id_control_e)
 );
@@ -52,7 +52,7 @@ CREATE TABLE detalle_categoria (
 
 CREATE TABLE empresa (
     id_empresa       INT NOT NULL AUTO_INCREMENT,
-    nombre_empresa   VARCHAR(50),
+    nombre_empresa   VARCHAR(100),
     rut_empresa      VARCHAR(30),
     imagen_empresa   VARCHAR(300) NOT NULL,
     PRIMARY KEY(id_empresa)
@@ -72,7 +72,7 @@ CREATE TABLE experiencia_laboral (
     periodo                  VARCHAR(50) NOT NULL,
     empresa                  VARCHAR(30) NOT NULL,
     cargo                    VARCHAR(30) NOT NULL,
-    glosa                    VARCHAR(40) NOT NULL,
+    glosa                    VARCHAR(40),
     PRIMARY KEY (id_experiencia_laboral)
 );
 
@@ -108,7 +108,7 @@ ALTER TABLE nacionalidad ADD CONSTRAINT nacionalidad_pk PRIMARY KEY ( id_naciona
 
 CREATE TABLE nivel_estudio (
     id_nivel_e       INT NOT NULL,
-    nombre_nivel_e   VARCHAR(30)
+    nombre_nivel_e   VARCHAR(70)
 );
 
 ALTER TABLE nivel_estudio ADD CONSTRAINT nivel_estudio_pk PRIMARY KEY ( id_nivel_e );

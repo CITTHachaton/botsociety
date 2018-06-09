@@ -20,7 +20,7 @@ import modelo.ControlUsuario;
  *
  * @author benja
  */
-public class ControladorLogin extends HttpServlet {
+public class ControladorSesion extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,7 +34,7 @@ public class ControladorLogin extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        HttpSession sesion = request.getSession(true);
+       HttpSession sesion = request.getSession(true);
         String usuario = request.getParameter("txtUsuario");
         String opcion = request.getParameter("opcion");
 

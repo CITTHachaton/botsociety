@@ -28,7 +28,7 @@
     %>
   </head>
   <body class="text-center">
-      <form class="form-signin" method="post" action="ControladorLogin">        
+      <form class="form-signin" method="post" action="ControladorSesion">        
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <img class="mb-4" src="" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Registrar Cuenta</h1>

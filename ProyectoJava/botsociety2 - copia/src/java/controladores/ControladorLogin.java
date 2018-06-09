@@ -40,7 +40,7 @@ public class ControladorLogin extends HttpServlet {
 
         ArrayList<ControlUsuario> controlU = new ArrayList<ControlUsuario>();
 
-        if (opcion.equals("res")) {
+        if (opcion.equals("registrar")) {
             controlU = (new ControlUsuarioDAO()).Listar();
 
             for (ControlUsuario xx : controlU) {

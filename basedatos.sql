@@ -44,12 +44,11 @@ CREATE TABLE control_usuario (
 
 
 CREATE TABLE detalle_categoria (
-    id_detalle_categoria   INT NOT NULL AUTO_INCREMENT,,
+    id_detalle_categoria   INT NOT NULL AUTO_INCREMENT,
     id_categoria           INT NOT NULL,
     id_oferta              INT NOT NULL,
     PRIMARY KEY(id_detalle_categoria)
 );
-
 
 CREATE TABLE empresa (
     id_empresa       INT NOT NULL AUTO_INCREMENT,
@@ -131,7 +130,7 @@ CREATE TABLE persona (
     id_tipo_d          INT NOT NULL,
     nombres            VARCHAR(50) NOT NULL,
     apellidos          VARCHAR(50) NOT NULL,
-    fecha_nacimiento   DATETIME NOT NULL,
+    fecha_nacimiento   DATE NOT NULL,
     id_nacionalidad    INT NOT NULL,
     id_comuna          INT NOT NULL,
     direccion          VARCHAR(300) NOT NULL,

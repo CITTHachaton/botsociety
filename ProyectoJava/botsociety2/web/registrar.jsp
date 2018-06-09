@@ -4,6 +4,8 @@
     Author     : benja
 --%>
 
+<%@page import="dao.CategoriaOfertaDAO"%>
+<%@page import="modelo.CategoriaOferta"%>
 <%@page import="dao.NivelEstudioDAO"%>
 <%@page import="modelo.NivelEstudio"%>
 <%@page import="dao.GeneroDAO"%>
@@ -43,6 +45,8 @@
             ArrayList<Sexo> sexos = new ArrayList<Sexo>();
             ArrayList<Genero> generos = new ArrayList<Genero>();
             ArrayList<NivelEstudio> nivel = new ArrayList<NivelEstudio>();
+            
+            ArrayList<CategoriaOferta> cate = new ArrayList<CategoriaOferta>();
 
             // ControlUsuario user = sesion.getAttribute("usuario") == null ? null : (ControlUsuario) sesion.getAttribute("usuario");
             String rut = "190553388";
@@ -55,6 +59,7 @@
                 sexos = (new SexoDAO()).Listar();
                 generos = (new GeneroDAO()).Listar();
                 nivel = (new NivelEstudioDAO()).Listar();
+                cate = (new CategoriaOfertaDAO()).Listar();
 
             } else {
                 response.sendRedirect("login.jsp");
@@ -246,14 +251,14 @@
                         </div>
 
                         <hr class="mb-4">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="same-address">
-                            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="save-info">
-                            <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                        </div>
+                        <%for (CategoriaOferta xx : cate) { %>
+                                 <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="<%=xx.getIdCategoria()%>">
+                            <label class="custom-control-label" for="<%=xx.getIdCategoria()%>"><%=xx.getNombreCategoria()%></label>
+                        </div> 
+                         <%   }
+                        %>
+                       
                         <hr class="mb-4">
 
                         <hr class="mb-4">

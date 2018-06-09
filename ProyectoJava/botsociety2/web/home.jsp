@@ -4,6 +4,10 @@
     Author     : benja
 --%>
 
+<%@page import="dao.ComunaDAO"%>
+<%@page import="dao.OfertaLaboralDAO"%>
+<%@page import="modelo.OfertaLaboral"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!doctype html>
@@ -22,6 +26,12 @@
 
     <!-- Custom styles for this template -->
     <link href="FrWork/Interno/bootstrap/css/home.css" rel="stylesheet">
+    <%
+        ArrayList<OfertaLaboral> ofertas  = new ArrayList<OfertaLaboral>();
+        
+        ofertas = (new OfertaLaboralDAO()).Listar();
+    
+    %>
   </head>
 
   <body class="bg-light">
@@ -63,60 +73,51 @@
 
     <div class="nav-scroller bg-white box-shadow">
       <nav class="nav nav-underline">
-        <a class="nav-link active" href="#">Dashboard</a>
+        <a class="nav-link active" href="#">Ofertas Disponibles</a>
         <a class="nav-link" href="#">
-          Friends
-          <span class="badge badge-pill bg-light align-text-bottom">27</span>
+          Ofertas para tu perfil
+          <span class="badge badge-pill bg-light align-text-bottom">10</span>
         </a>
-        <a class="nav-link" href="#">Explore</a>
-        <a class="nav-link" href="#">Suggestions</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">
+          Has Postulado a
+          <span class="badge badge-pill bg-light align-text-bottom">5</span>
+        </a>
       </nav>
     </div>
 
     <main role="main" class="container">
-      <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
-        <img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+      <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded box-shadow">
         <div class="lh-100">
-          <h6 class="mb-0 text-white lh-100">Bootstrap</h6>
-          <small>Since 2011</small>
+          <h6 class="mb-0 text-white lh-100">Feria Laboral</h6>
+          <small>2018</small>
         </div>
       </div>
 
       <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
+        <h6 class="border-bottom border-gray pb-2 mb-0">Nuevas ofertas</h6>
+        <%for (OfertaLaboral xx: ofertas) { %>
+                
         <div class="media text-muted pt-3">
           <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
           <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-            <strong class="d-block text-gray-dark">@username</strong>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              <strong class="d-block text-gray-dark">@<%=xx.getNombreOferta()%></strong>
+            <%=xx.getGlosa()%>
           </p>
+          <p><strong><%=(new ComunaDAO()).Leer(xx.getIdComuna()).getNombreComuna()%></strong></p>
+          <button class="btn bg-danger">ver</button>
         </div>
-        <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
-          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-            <strong class="d-block text-gray-dark">@username</strong>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          </p>
-        </div>
-        <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
-          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-            <strong class="d-block text-gray-dark">@username</strong>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          </p>
-        </div>
+        
+        <%    }
+        %>
+        
+        
         <small class="d-block text-right mt-3">
-          <a href="#">All updates</a>
+          <a href="#">Actualizar</a>
         </small>
       </div>
 <div class="container">
-    <div class="row">
-        <a href="/FrWork/03 PROGRAMA 2da HACKATHON CITT.pdf" width="100%"></a>
+    <div class="row" id="Crono">
+        <img src="FrWork/programa.jpg" alt="Smiley face" height="auto" width="100%">
     </div>
 </div>
       <div class="my-3 p-3 bg-white rounded box-shadow">

@@ -36,7 +36,7 @@
       <label for="inputEmail" class="sr-only">Rut o Pasaporte</label>
       <input type="text" id="inputEmail" class="form-control" placeholder="Rut o pasaporte" name="txtUsuario" required autofocus>
       <br><br>
-      <a class="btn btn-lg btn-danger btn-block" href="registrar.jsp" ></a>
+      <a class="btn btn-lg btn-primary btn-block" href="registrar.jsp" >Ingresar</a>
       <a class="btn btn-lg btn-danger btn-block" href="index.jsp" >Volver</a>
        
       <p class="mt-5 mb-3 text-muted">&copy; botsociety 2018</p>

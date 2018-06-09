@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     
-    <head>
-        
+    <head>        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <style>
             #map {
@@ -30,8 +29,6 @@
     </head>
 
     <body>
-
-        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">Feria Laboral </a>
@@ -50,21 +47,18 @@
                 </div>
             </div>
         </nav>
-        <header class="masthead text-center text-white">
-            <div class="masthead-content">
-                <div class="container">
-                    <h1 class="masthead-heading mb-0">Feria Laboral</h1>
-                    <h2 class="masthead-subheading mb-0">La Mejor oportunidad para encontra trabajo está aqui!!!</h2>
-                    <a href="login.jsp" class="btn btn-primary btn-xl rounded-pill mt-5">Registrarse</a>
-                    <a><br></a>
-                    <a href="login.jsp" class="btn btn-primary btn-xl rounded-pill mt-5">ingresar</a>
+
+        <section class="bg-primary">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <img class="img-fluid rounded-pill" src="FrWork/feria.jpg" alt="">
+                        </div>
+                    </div>                    
                 </div>
             </div>
-            <div class="bg-circle-1 bg-circle"></div>
-            <div class="bg-circle-2 bg-circle"></div>
-            <div class="bg-circle-3 bg-circle"></div>
-            <div class="bg-circle-4 bg-circle"></div>
-        </header>
+        </section>
         <section>
             <div class="container">
                 <div class="row align-items-center">

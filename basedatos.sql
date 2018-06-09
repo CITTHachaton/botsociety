@@ -28,7 +28,6 @@ CREATE TABLE control_empresa (
     usuario        VARCHAR(40) NOT NULL,
     clave          VARCHAR(30) NOT NULL,
     rut_empresa    VARCHAR(30),
-    id_empresa     INT NOT NULL,
     PRIMARY KEY(id_control_e)
 );
 
@@ -55,6 +54,9 @@ CREATE TABLE empresa (
     nombre_empresa   VARCHAR(100),
     rut_empresa      VARCHAR(30),
     imagen_empresa   VARCHAR(300) NOT NULL,
+    id_rubro         INT NOT NULL,
+    id_stand         INT NOT NULL,
+    id_control_e     INT NOT NULL,
     PRIMARY KEY(id_empresa)
 );
 
@@ -191,15 +193,31 @@ CREATE TABLE tipo_documento (
     nombre_tipo_d   VARCHAR(100)
 );
 
+CREATE TABLE rubro (
+    id_rubro        INT NOT NULL,
+    nombre_rubro    VARCHAR(100)
+);
+
+ALTER TABLE rubro ADD CONSTRAINT rubro_pk PRIMARY KEY (id_rubro);
+
+CREATE TABLE area (
+    id_area         INT NOT NULL,
+    nombre          VARCHAR(100)
+);
+
+ALTER TABLE area ADD CONSTRAINT area_pk PRIMARY KEY (id_area);
+
+CREATE TABLE stand (
+    id_stand        INT NOT NULL,
+    num_stand       INT NOT NULL,
+    id_area         INT NOT NULL
+);
+
 ALTER TABLE tipo_documento ADD CONSTRAINT tipo_documento_pk PRIMARY KEY ( id_tipo_d );
 
 ALTER TABLE comuna
     ADD CONSTRAINT comuna_provincia_fk FOREIGN KEY ( id_provincia )
         REFERENCES provincia ( id_provincia );
-
-ALTER TABLE control_empresa
-    ADD CONSTRAINT cont_empr_fk FOREIGN KEY ( id_empresa )
-        REFERENCES empresa ( id_empresa );
 
 ALTER TABLE control_usuario
     ADD CONSTRAINT control_persona_fk FOREIGN KEY ( id_persona )
@@ -285,7 +303,21 @@ ALTER TABLE respuestas
     ADD CONSTRAINT respuestas_postulacion_fk FOREIGN KEY ( id_postulacion )
         REFERENCES postulacion ( id_postulacion );
 
+ALTER TABLE empresa
+    ADD CONSTRAINT empresa_controlemp_fk FOREIGN KEY (id_control_e)
+        REFERENCES control_empresa (id_control_e);
+        
+ALTER TABLE stand
+    ADD CONSTRAINT stand_area_fk FOREIGN KEY (id_area) 
+        REFERENCES area (id_area);
 
+ALTER TABLE empresa
+    ADD CONSTRAINT empresa_rubro_fk FOREIGN KEY (id_rubro)
+        REFERENCES rubro (id_rubro);
+    
+ALTER TABLE empresa
+    ADD CONSTRAINT empresa_stand_fk FOREIGN KEY (id_stand)
+        REFERENCES stand (id_stand);
 
 
 INSERT INTO provincia VALUES (1,'Santiago');

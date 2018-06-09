@@ -43,11 +43,6 @@ public class TipoDocumento implements Serializable {
     public TipoDocumento() {
     }
 
-    public TipoDocumento(Integer idTipoD, String nombreTipoD) {
-        this.idTipoD = idTipoD;
-        this.nombreTipoD = nombreTipoD;
-    }
-
     public TipoDocumento(Integer idTipoD) {
         this.idTipoD = idTipoD;
     }
@@ -90,7 +85,7 @@ public class TipoDocumento implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.TipoDocumento[ idTipoD=" + idTipoD + " ]";
+        return "conexion.TipoDocumento[ idTipoD=" + idTipoD + " ]";
     }
     
 }

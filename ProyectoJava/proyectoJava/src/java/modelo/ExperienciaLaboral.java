@@ -61,9 +61,7 @@ public class ExperienciaLaboral implements Serializable {
     @Size(min = 1, max = 30)
     @Column(name = "cargo")
     private String cargo;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 40)
+    @Size(max = 40)
     @Column(name = "glosa")
     private String glosa;
 
@@ -74,13 +72,12 @@ public class ExperienciaLaboral implements Serializable {
         this.idExperienciaLaboral = idExperienciaLaboral;
     }
 
-    public ExperienciaLaboral(Integer idExperienciaLaboral, int idPersona, String periodo, String empresa, String cargo, String glosa) {
+    public ExperienciaLaboral(Integer idExperienciaLaboral, int idPersona, String periodo, String empresa, String cargo) {
         this.idExperienciaLaboral = idExperienciaLaboral;
         this.idPersona = idPersona;
         this.periodo = periodo;
         this.empresa = empresa;
         this.cargo = cargo;
-        this.glosa = glosa;
     }
 
     public Integer getIdExperienciaLaboral() {
@@ -153,7 +150,7 @@ public class ExperienciaLaboral implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.ExperienciaLaboral[ idExperienciaLaboral=" + idExperienciaLaboral + " ]";
+        return "conexion.ExperienciaLaboral[ idExperienciaLaboral=" + idExperienciaLaboral + " ]";
     }
     
 }

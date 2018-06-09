@@ -40,7 +40,7 @@ public class Empresa implements Serializable {
     @Basic(optional = false)
     @Column(name = "id_empresa")
     private Integer idEmpresa;
-    @Size(max = 50)
+    @Size(max = 100)
     @Column(name = "nombre_empresa")
     private String nombreEmpresa;
     @Size(max = 30)
@@ -53,13 +53,6 @@ public class Empresa implements Serializable {
     private String imagenEmpresa;
 
     public Empresa() {
-    }
-
-    public Empresa(Integer idEmpresa, String nombreEmpresa, String rutEmpresa, String imagenEmpresa) {
-        this.idEmpresa = idEmpresa;
-        this.nombreEmpresa = nombreEmpresa;
-        this.rutEmpresa = rutEmpresa;
-        this.imagenEmpresa = imagenEmpresa;
     }
 
     public Empresa(Integer idEmpresa) {
@@ -125,7 +118,7 @@ public class Empresa implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Empresa[ idEmpresa=" + idEmpresa + " ]";
+        return "conexion.Empresa[ idEmpresa=" + idEmpresa + " ]";
     }
     
 }

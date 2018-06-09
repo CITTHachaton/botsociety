@@ -106,7 +106,7 @@ public class Likes implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Likes[ idLikes=" + idLikes + " ]";
+        return "conexion.Likes[ idLikes=" + idLikes + " ]";
     }
     
 }

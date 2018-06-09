@@ -79,7 +79,7 @@ public class Persona implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "fecha_nacimiento")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date fechaNacimiento;
     @Basic(optional = false)
     @NotNull
@@ -131,27 +131,6 @@ public class Persona implements Serializable {
 
     public Persona(Integer idPersona) {
         this.idPersona = idPersona;
-    }
-
-    public Persona(Integer idPersona, String rutPersona, int idTipoD, String nombres, String apellidos, Date fechaNacimiento, int idNacionalidad, int idComuna, String direccion, int idEstadoc, int idSexo, int idGenero, int idNivelE, String profesion, String correo, String telefono, String celular, String presentacion) {
-        this.idPersona = idPersona;
-        this.rutPersona = rutPersona;
-        this.idTipoD = idTipoD;
-        this.nombres = nombres;
-        this.apellidos = apellidos;
-        this.fechaNacimiento = fechaNacimiento;
-        this.idNacionalidad = idNacionalidad;
-        this.idComuna = idComuna;
-        this.direccion = direccion;
-        this.idEstadoc = idEstadoc;
-        this.idSexo = idSexo;
-        this.idGenero = idGenero;
-        this.idNivelE = idNivelE;
-        this.profesion = profesion;
-        this.correo = correo;
-        this.telefono = telefono;
-        this.celular = celular;
-        this.presentacion = presentacion;
     }
 
     public Persona(Integer idPersona, String rutPersona, int idTipoD, String nombres, String apellidos, Date fechaNacimiento, int idNacionalidad, int idComuna, String direccion, int idEstadoc, int idSexo, int idGenero, int idNivelE) {
@@ -336,7 +315,7 @@ public class Persona implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Persona[ idPersona=" + idPersona + " ]";
+        return "conexion.Persona[ idPersona=" + idPersona + " ]";
     }
     
 }

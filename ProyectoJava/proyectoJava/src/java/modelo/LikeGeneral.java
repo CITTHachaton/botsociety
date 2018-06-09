@@ -51,13 +51,6 @@ public class LikeGeneral implements Serializable {
     public LikeGeneral() {
     }
 
-    public LikeGeneral(Integer idLikeG, int idPersona, Integer positivo, Integer negativo) {
-        this.idLikeG = idLikeG;
-        this.idPersona = idPersona;
-        this.positivo = positivo;
-        this.negativo = negativo;
-    }
-
     public LikeGeneral(Integer idLikeG) {
         this.idLikeG = idLikeG;
     }
@@ -121,7 +114,7 @@ public class LikeGeneral implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.LikeGeneral[ idLikeG=" + idLikeG + " ]";
+        return "conexion.LikeGeneral[ idLikeG=" + idLikeG + " ]";
     }
     
 }

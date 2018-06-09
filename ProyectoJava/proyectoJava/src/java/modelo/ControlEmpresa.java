@@ -51,7 +51,7 @@ public class ControlEmpresa implements Serializable {
     @Size(min = 1, max = 30)
     @Column(name = "clave")
     private String clave;
-    @Size(max = 1)
+    @Size(max = 30)
     @Column(name = "rut_empresa")
     private String rutEmpresa;
     @Basic(optional = false)
@@ -64,14 +64,6 @@ public class ControlEmpresa implements Serializable {
 
     public ControlEmpresa(Integer idControlE) {
         this.idControlE = idControlE;
-    }
-
-    public ControlEmpresa(Integer idControlE, String usuario, String clave, String rutEmpresa, int idEmpresa) {
-        this.idControlE = idControlE;
-        this.usuario = usuario;
-        this.clave = clave;
-        this.rutEmpresa = rutEmpresa;
-        this.idEmpresa = idEmpresa;
     }
 
     public ControlEmpresa(Integer idControlE, String usuario, String clave, int idEmpresa) {
@@ -143,7 +135,7 @@ public class ControlEmpresa implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.ControlEmpresa[ idControlE=" + idControlE + " ]";
+        return "conexion.ControlEmpresa[ idControlE=" + idControlE + " ]";
     }
     
 }

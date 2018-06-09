@@ -70,15 +70,6 @@ public class OfertaLaboral implements Serializable {
         this.idOferta = idOferta;
     }
 
-    public OfertaLaboral(Integer idOferta, String nombreOferta, int vacantes, int idEmpresa, String glosa, int idComuna) {
-        this.idOferta = idOferta;
-        this.nombreOferta = nombreOferta;
-        this.vacantes = vacantes;
-        this.idEmpresa = idEmpresa;
-        this.glosa = glosa;
-        this.idComuna = idComuna;
-    }
-
     public OfertaLaboral(Integer idOferta, int vacantes, int idEmpresa, String glosa, int idComuna) {
         this.idOferta = idOferta;
         this.vacantes = vacantes;
@@ -157,7 +148,7 @@ public class OfertaLaboral implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.OfertaLaboral[ idOferta=" + idOferta + " ]";
+        return "conexion.OfertaLaboral[ idOferta=" + idOferta + " ]";
     }
     
 }

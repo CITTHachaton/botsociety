@@ -92,7 +92,7 @@ public class EstadoCivil implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.EstadoCivil[ idEstadoc=" + idEstadoc + " ]";
+        return "conexion.EstadoCivil[ idEstadoc=" + idEstadoc + " ]";
     }
     
 }

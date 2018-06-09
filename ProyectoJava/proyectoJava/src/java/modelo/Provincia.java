@@ -43,11 +43,6 @@ public class Provincia implements Serializable {
     public Provincia() {
     }
 
-    public Provincia(Integer idProvincia, String nombreProvincia) {
-        this.idProvincia = idProvincia;
-        this.nombreProvincia = nombreProvincia;
-    }
-
     public Provincia(Integer idProvincia) {
         this.idProvincia = idProvincia;
     }
@@ -90,7 +85,7 @@ public class Provincia implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Provincia[ idProvincia=" + idProvincia + " ]";
+        return "conexion.Provincia[ idProvincia=" + idProvincia + " ]";
     }
     
 }

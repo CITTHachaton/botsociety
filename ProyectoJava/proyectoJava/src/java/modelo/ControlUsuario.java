@@ -62,16 +62,16 @@ public class ControlUsuario implements Serializable {
     public ControlUsuario() {
     }
 
+    public ControlUsuario(Integer idControlU) {
+        this.idControlU = idControlU;
+    }
+
     public ControlUsuario(Integer idControlU, String usuario, String clave, String rutPersona, int idPersona) {
         this.idControlU = idControlU;
         this.usuario = usuario;
         this.clave = clave;
         this.rutPersona = rutPersona;
         this.idPersona = idPersona;
-    }
-
-    public ControlUsuario(Integer idControlU) {
-        this.idControlU = idControlU;
     }
 
     public ControlUsuario(Integer idControlU, String usuario, String clave, int idPersona) {
@@ -143,7 +143,7 @@ public class ControlUsuario implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.ControlUsuario[ idControlU=" + idControlU + " ]";
+        return "conexion.ControlUsuario[ idControlU=" + idControlU + " ]";
     }
     
 }

@@ -36,7 +36,7 @@ public class NivelEstudio implements Serializable {
     @NotNull
     @Column(name = "id_nivel_e")
     private Integer idNivelE;
-    @Size(max = 30)
+    @Size(max = 70)
     @Column(name = "nombre_nivel_e")
     private String nombreNivelE;
 
@@ -45,11 +45,6 @@ public class NivelEstudio implements Serializable {
 
     public NivelEstudio(Integer idNivelE) {
         this.idNivelE = idNivelE;
-    }
-
-    public NivelEstudio(Integer idNivelE, String nombreNivelE) {
-        this.idNivelE = idNivelE;
-        this.nombreNivelE = nombreNivelE;
     }
 
     public Integer getIdNivelE() {
@@ -90,7 +85,7 @@ public class NivelEstudio implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.NivelEstudio[ idNivelE=" + idNivelE + " ]";
+        return "conexion.NivelEstudio[ idNivelE=" + idNivelE + " ]";
     }
     
 }

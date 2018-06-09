@@ -108,7 +108,7 @@ public class Pregunta implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Pregunta[ idPregunta=" + idPregunta + " ]";
+        return "conexion.Pregunta[ idPregunta=" + idPregunta + " ]";
     }
     
 }

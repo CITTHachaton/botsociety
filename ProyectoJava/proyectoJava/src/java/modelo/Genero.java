@@ -43,11 +43,6 @@ public class Genero implements Serializable {
     public Genero() {
     }
 
-    public Genero(Integer idGenero, String nombreGenero) {
-        this.idGenero = idGenero;
-        this.nombreGenero = nombreGenero;
-    }
-
     public Genero(Integer idGenero) {
         this.idGenero = idGenero;
     }
@@ -90,7 +85,7 @@ public class Genero implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Genero[ idGenero=" + idGenero + " ]";
+        return "conexion.Genero[ idGenero=" + idGenero + " ]";
     }
     
 }

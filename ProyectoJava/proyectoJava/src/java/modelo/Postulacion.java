@@ -124,7 +124,7 @@ public class Postulacion implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Postulacion[ idPostulacion=" + idPostulacion + " ]";
+        return "conexion.Postulacion[ idPostulacion=" + idPostulacion + " ]";
     }
     
 }

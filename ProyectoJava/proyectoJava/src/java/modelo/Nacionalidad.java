@@ -92,7 +92,7 @@ public class Nacionalidad implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Nacionalidad[ idNacionalidad=" + idNacionalidad + " ]";
+        return "conexion.Nacionalidad[ idNacionalidad=" + idNacionalidad + " ]";
     }
     
 }

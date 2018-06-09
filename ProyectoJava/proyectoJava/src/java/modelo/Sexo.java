@@ -92,7 +92,7 @@ public class Sexo implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Sexo[ idSexo=" + idSexo + " ]";
+        return "conexion.Sexo[ idSexo=" + idSexo + " ]";
     }
     
 }

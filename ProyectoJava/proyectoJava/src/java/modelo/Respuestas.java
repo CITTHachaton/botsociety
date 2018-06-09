@@ -122,7 +122,7 @@ public class Respuestas implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.Respuestas[ idRespuesta=" + idRespuesta + " ]";
+        return "conexion.Respuestas[ idRespuesta=" + idRespuesta + " ]";
     }
     
 }

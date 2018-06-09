@@ -40,11 +40,6 @@ public class CategoriaOferta implements Serializable {
     @Column(name = "nombre_categoria")
     private String nombreCategoria;
 
-    public CategoriaOferta(Integer idCategoria, String nombreCategoria) {
-        this.idCategoria = idCategoria;
-        this.nombreCategoria = nombreCategoria;
-    }
-
     public CategoriaOferta() {
     }
 
@@ -90,7 +85,7 @@ public class CategoriaOferta implements Serializable {
 
     @Override
     public String toString() {
-        return "modelo.CategoriaOferta[ idCategoria=" + idCategoria + " ]";
+        return "conexion.CategoriaOferta[ idCategoria=" + idCategoria + " ]";
     }
     
 }
